@@ -60,7 +60,7 @@ def on_ask_change(edit, new_edit_text):
 
 
 ask = urwid.Edit('Введите пароль: ', mask='*')
-reply = urwid.Text("Рейтинг пароля: 0")  #
+reply = urwid.Text("Рейтинг пароля: 0")  
 menu = urwid.Pile([ask, reply])
 menu = urwid.Filler(menu, valign='top')
 
