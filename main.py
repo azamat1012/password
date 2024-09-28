@@ -54,9 +54,9 @@ def score(password):
 
 def on_ask_change(edit, new_edit_text):
 
-    score = score(new_edit_text)
+    password_score = score(new_edit_text)
 
-    reply.set_text(f"Рейтинг пароля: {score}")
+    reply.set_text(f"Рейтинг пароля: {password_score}")
 
 
 ask = urwid.Edit('Введите пароль: ', mask='*')
