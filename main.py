@@ -30,7 +30,8 @@ def has_lower_letters(password):
 
 
 def has_symbols(password):
-    return any(element in string.punctuation for element in password)
+
+    return any(element in string.punctuation or element == ' ' for element in password)
 
 
 def score(password):
